@@ -6,6 +6,10 @@ const {
   getTransactionById,
 } = require("../controllers/transactions.controller");
 
+const { restrict } = require("../middleware/restrict");
+
+router.use(restrict);
+
 /**
  * @swagger
  * /transactions:

@@ -14,6 +14,10 @@ const {
   CheckDepositWithdraw,
 } = require("../middleware/middleware");
 
+const { restrict } = require("../middleware/restrict");
+
+router.use(restrict);
+
 /**
  * @swagger
  * /accounts:
