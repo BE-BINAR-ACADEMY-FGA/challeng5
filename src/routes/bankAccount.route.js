@@ -104,9 +104,6 @@ router.get("/:accountsId", getBankAccontById);
  *      - "Bank Account"
  *     summary: Update Bank Account
  *     description: Update bank account
- *     parameters:
- *      - in: path
- *        name: accountsId
  *     requestBody:
  *      required: true
  *      content:
@@ -120,9 +117,9 @@ router.get("/:accountsId", getBankAccontById);
  *                type: string
  *              bank_account_number:
  *                type: string
- *    responses:
+ *     responses:
  *      201:
- *        description: Bank account created successfully
+ *        description: Bank account updated successfully
  *      400:
  *        description: Bad request
  *      500:
