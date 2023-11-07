@@ -9,6 +9,10 @@ const {
 } = require("../controllers/user.controller");
 const { CheckPostReq } = require("../middleware/middleware");
 
+const { restrict } = require("../middleware/restrict");
+
+router.use(restrict);
+
 /**
  * @swagger
  * /users:
